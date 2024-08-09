@@ -21,6 +21,41 @@ body {
     font-family: var(--font-body);
 }
 
+header {
+    display: flex;
+    align-items: center;
+    column-gap: clamp(1.5rem, 0.308rem + 5.085vw, 3.563rem);
+
+    padding-top: clamp(1.5rem, 0.019rem + 6.317vw, 4.063rem);
+    padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+}
+
+header img {
+    margin-right: auto;
+    width: clamp(5rem, 1.894rem + 13.251vw, 10.375rem);
+}
+
+header button {
+    flex-basis: 1;
+    flex-shrink: 1;
+
+    border: none;
+    background: inherit;
+    font-family: var(--font-header);
+}
+
+.main-signup-section {
+    padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+}
+
+.main-signup-section__illustration {
+    max-width: 100%;
+}
+
+.location-pitch-section__illustration {
+    max-width: 100%;
+}
+
 .early-access-section {
     background-color: var(--desaturated-blue);
     color: white;

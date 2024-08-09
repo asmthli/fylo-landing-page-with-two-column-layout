@@ -18,6 +18,17 @@
 
 body {
     font-weight: 400;
+    font-family: var(--font-body);
+}
+
+.early-access-section {
+    background-color: var(--desaturated-blue);
+    color: white;
+}
+
+footer {
+    background-color: var(--very-dark-blue);
+    color: white;
 }
 
 .attribution {

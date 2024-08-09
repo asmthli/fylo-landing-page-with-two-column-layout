@@ -10,15 +10,26 @@
     /* Fonts */
     --font-header: Raleway;
     --font-body: "Open Sans";
+
+    font-size: 14px;
 }
 
 * {
     box-sizing: border-box;
 }
 
+input {
+    padding-inline: 1rem;
+}
+
+input::placeholder {
+    opacity: 40%;
+}
+
 body {
     font-weight: 400;
     font-family: var(--font-body);
+    color: var(--very-dark-blue);
 }
 
 header {
@@ -36,22 +47,50 @@ header img {
 }
 
 header button {
-    flex-basis: 1;
-    flex-shrink: 1;
-
     border: none;
     background: inherit;
     font-family: var(--font-header);
+    color: inherit;
 }
 
 .main-signup-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    text-align: center;
     padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+}
+
+.main-signup-section h1 {
+    font-size: 1.5rem;
 }
 
 .main-signup-section__illustration {
     max-width: 100%;
 }
 
+.main-signup-section button,
+.early-access-section button {
+    height: 2.5rem;
+
+    color: white;
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-header);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.main-signup-section input {
+    height: 2.5rem;
+    border-radius: 4px;
+}
+
+.location-pitch-section {
+    padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+}
 .location-pitch-section__illustration {
     max-width: 100%;
 }

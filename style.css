@@ -26,6 +26,28 @@ input::placeholder {
     opacity: 40%;
 }
 
+a {
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    width: max-content;
+    padding-bottom: 0.2rem;
+
+    font-size: 0.875rem;
+    color: var(--moderate-cyan);
+    text-decoration: none;
+    border-bottom: 0.1rem solid;
+}
+
+a::after {
+    position: relative;
+    top: 3px;
+
+    content: url(/images/icon-arrow.svg);
+}
+
 body {
     font-weight: 400;
     font-family: var(--font-body);
@@ -89,8 +111,19 @@ header button {
 }
 
 .location-pitch-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+
+    text-align: center;
 }
+
+.location-pitch-section h2 {
+    font-family: var(--font-header);
+}
+
 .location-pitch-section__illustration {
     max-width: 100%;
 }

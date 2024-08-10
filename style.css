@@ -56,6 +56,8 @@ body {
     font-weight: 400;
     font-family: var(--font-body);
     color: var(--very-dark-blue);
+
+    margin: 0;
 }
 
 header {
@@ -281,4 +283,81 @@ footer .contacts__phone::before {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+    .main-signup-section {
+        display: grid;
+        grid-template-columns: auto auto 50%;
+        grid-template-rows: 1fr auto auto auto 1fr;
+        gap: 0;
+
+        text-align: left;
+    }
+
+    .main-signup-section *:not(.main-signup-section__illustration) {
+        grid-column-end: span 2;
+    }
+
+    .main-signup-section::before {
+        content: " ";
+    }
+
+    .main-signup-section.main-signup-section input {
+        grid-column: 1;
+        grid-column-end: span 1;
+        margin-inline-end: 10px;
+    }
+
+    .main-signup-section.main-signup-section button {
+        grid-column: 2;
+    }
+
+    .main-signup-section__illustration {
+        grid-column: 3;
+        grid-row: 1 / 6;
+    }
+
+    .location-pitch-section {
+        display: grid;
+        grid-template-columns: auto 50%;
+        grid-template-rows: repeat(5, auto);
+        gap: 0;
+        text-align: left;
+    }
+
+    .location-pitch-section * {
+        grid-column: 1;
+    }
+
+    .location-pitch-section__illustration {
+        grid-column: 2;
+        grid-row: 1 / -1;
+    }
+
+    .location-pitch-section a {
+        column-gap: 0.3rem;
+        margin-block: 2rem;
+    }
+
+    .early-access-section {
+        display: grid;
+        grid-template-columns: 1fr 50%;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        column-gap: 8rem;
+
+        padding-inline: 8rem;
+
+        text-align: left;
+    }
+
+    .early-access-section input {
+        align-self: end;
+        width: 70%;
+    }
+
+    .early-access-section button {
+        width: 35%;
+    }
 }

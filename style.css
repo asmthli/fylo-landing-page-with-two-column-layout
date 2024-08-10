@@ -181,8 +181,21 @@ header button {
 }
 
 .early-access-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    padding: 3rem 4rem;
+
+    text-align: center;
     background-color: var(--desaturated-blue);
     color: white;
+}
+
+.early-access-section input {
+    height: 2.5rem;
+    border-radius: 4px;
+    border: none;
 }
 
 footer {

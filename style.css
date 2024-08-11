@@ -291,22 +291,29 @@ footer .contacts__phone::before {
 .socials {
     display: flex;
     justify-content: center;
-    column-gap: 0.5rem;
+    column-gap: 1rem;
 }
 
 .socials button {
     background-color: transparent;
-    border: none;
-}
-
-.socials img {
-    width: 1.9rem;
-    height: 1.9rem;
-
+    border: 2px solid white;
     padding: 0.4rem;
 
-    border: 1px solid white;
     border-radius: 100%;
+}
+
+.socials button:hover {
+    background-color: inherit;
+    color: var(--bright-blue);
+    border-color: var(--bright-blue);
+}
+
+.socials i {
+    font-size: 30px;
+}
+
+.socials p {
+    display: none;
 }
 
 .attribution {

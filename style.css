@@ -191,12 +191,12 @@ header button {
 .testimonial__name {
     margin: 0;
     font-weight: bold;
-    font-size: 0.5625rem;
+    font-size: 0.8em;
 }
 
 .testimonial__role {
     margin: 0;
-    font-size: 0.375rem;
+    font-size: 0.7em;
 }
 
 .early-access-section {
@@ -365,6 +365,10 @@ footer .contacts__phone::before {
 
     .early-access-section button {
         width: 35%;
+    }
+
+    .testimonial {
+        font-size: 1rem;
     }
 
     footer {

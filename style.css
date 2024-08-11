@@ -49,7 +49,7 @@ input::placeholder {
     position: relative;
     top: 3px;
 
-    content: url(/images/icon-arrow.svg);
+    content: url(images/icon-arrow.svg);
 }
 
 body {
@@ -177,7 +177,7 @@ input:invalid {
 }
 
 .testimonial::before {
-    content: url(/images/icon-quotes.svg);
+    content: url(images/icon-quotes.svg);
 }
 
 .testimonial div {
@@ -270,7 +270,7 @@ footer .contacts__phone::before {
 }
 
 .contacts__email::before {
-    content: url(/images/icon-email.svg);
+    content: url(images/icon-email.svg);
 }
 
 .socials {

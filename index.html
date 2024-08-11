@@ -53,7 +53,14 @@
             </section>
         </main>
 
-        <img class="background-curve" src="images/bg-curve-mobile.svg" />
+        <picture>
+            <source
+                media="(min-width: 1024px)"
+                srcset="images/bg-curve-desktop.svg"
+            />
+            <source srcset="images/bg-curve-mobile.svg" />
+            <img class="background-curve" src="images/bg-curve-desktop.svg" />
+        </picture>
 
         <section class="location-pitch-section">
             <img

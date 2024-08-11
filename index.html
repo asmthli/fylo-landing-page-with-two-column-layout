@@ -48,8 +48,15 @@
                     location. Access them wherever you need, share and
                     collaborate with friends, family, and co-workers.
                 </p>
-                <input type="text" placeholder="Enter your email..." />
-                <button>Get Started</button>
+
+                <form novalidate>
+                    <input
+                        type="email"
+                        placeholder="Enter your email..."
+                        required
+                    />
+                    <button>Get Started</button>
+                </form>
             </section>
         </main>
 
@@ -106,7 +113,7 @@
                 would be happy to help you.
             </p>
 
-            <input type="text" placeholder="email@example.com" />
+            <input type="email" placeholder="email@example.com" />
             <button>Get Started For Free</button>
         </section>
 

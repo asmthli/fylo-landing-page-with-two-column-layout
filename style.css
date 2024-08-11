@@ -7,6 +7,8 @@
     --light-grayish-blue: #f8f8fe;
     --light-gray: hsl(0, 0%, 75%);
 
+    --button-hover-color: #6c9bff;
+
     /* Fonts */
     --font-header: Raleway;
     --font-body: "Open Sans";
@@ -18,10 +20,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 input {
@@ -115,6 +113,21 @@ header button {
     font-family: var(--font-header);
     font-weight: bold;
     font-size: 0.875rem;
+}
+
+.main-signup-section form {
+    display: grid;
+    gap: 20px;
+}
+
+.main-signup-section form:has(input:invalid):after {
+    margin-top: 0.5rem;
+    content: "Please check your email";
+    color: red;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .main-signup-section input {
@@ -291,6 +304,11 @@ footer .contacts__phone::before {
     color: hsl(228, 45%, 44%);
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+}
+
 @media (min-width: 1024px) {
     .main-signup-section {
         display: grid;
@@ -307,6 +325,10 @@ footer .contacts__phone::before {
 
     .main-signup-section::before {
         content: " ";
+    }
+
+    .main-signup-section form button {
+        grid-row: 1;
     }
 
     .main-signup-section.main-signup-section input {

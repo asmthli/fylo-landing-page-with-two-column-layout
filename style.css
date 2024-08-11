@@ -4,7 +4,7 @@
     --desaturated-blue: hsl(238, 22%, 44%);
     --bright-blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
-    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-grayish-blue: #f8f8fe;
     --light-gray: hsl(0, 0%, 75%);
 
     /* Fonts */
@@ -14,7 +14,9 @@
     font-size: 14px;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -91,6 +93,7 @@ header button {
 
     text-align: center;
     padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+    margin-bottom: 5rem;
 }
 
 .main-signup-section h1 {
@@ -119,6 +122,11 @@ header button {
     border-radius: 4px;
 }
 
+.background-curve {
+    width: 100%;
+    display: block;
+}
+
 .location-pitch-section {
     display: flex;
     flex-direction: column;
@@ -127,8 +135,10 @@ header button {
 
     padding-block: 2rem;
     padding-inline: clamp(1.688rem, -0.227rem + 8.166vw, 5rem);
+    padding-bottom: 5rem;
 
     text-align: center;
+    background-color: var(--light-grayish-blue);
 }
 
 .location-pitch-section h2 {
@@ -224,10 +234,6 @@ footer ul {
 
 footer li {
     margin-bottom: 1.5rem;
-}
-
-footer li:nth-child(4) {
-    margin-bottom: 3rem;
 }
 
 .contacts {
@@ -359,5 +365,21 @@ footer .contacts__phone::before {
 
     .early-access-section button {
         width: 35%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto repeat(2, auto);
+
+        padding: 7rem 6rem 0 6rem;
+    }
+
+    footer svg {
+        grid-column: 1 / -1;
+    }
+
+    .attribution {
+        grid-column: 1 / -1;
     }
 }
